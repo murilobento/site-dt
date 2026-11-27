@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #D97707;
+  --color-brand-navy: #0F2942;
+  --color-light-primary: #001428;
+  --color-light-on-primary: #FFFFFF;
+  --color-light-primary-container: #0F2942;
+  --color-light-on-primary-container: #D1E4FF;
+  --color-light-secondary: #904D00;
+  --color-light-on-secondary: #FFFFFF;
+  --color-light-secondary-container: #FE932C;
+  --color-light-on-secondary-container: #2F1500;
+  --color-light-tertiary: #1F0F00;
+  --color-light-on-tertiary: #FFFFFF;
+  --color-light-tertiary-container: #3B2201;
+  --color-light-on-tertiary-container: #FFEEDF;
+  --color-light-error: #BA1A1A;
+  --color-light-on-error: #FFFFFF;
+  --color-light-error-container: #FFDAD6;
+  --color-light-on-error-container: #93000A;
+  --color-light-background: #FAF9FB;
+  --color-light-on-background: #1B1C1E;
+  --color-light-surface: #FAF9FB;
+  --color-light-surface-dim: #DBD9DC;
+  --color-light-surface-bright: #FAF9FB;
+  --color-light-surface-container-lowest: #FFFFFF;
+  --color-light-surface-container-low: #F5F3F5;
+  --color-light-surface-container: #EFEDF0;
+  --color-light-surface-container-high: #E9E8EA;
+  --color-light-surface-container-highest: #E3E2E4;
+  --color-light-on-surface: #1B1C1E;
+  --color-light-surface-variant: #E0E2EA;
+  --color-light-on-surface-variant: #43474D;
+  --color-light-outline: #74777E;
+  --color-light-outline-variant: #C3C6CE;
+  --color-light-inverse-surface: #2F3032;
+  --color-light-inverse-on-surface: #F2F0F3;
+  --color-light-inverse-primary: #B0C9E8;
+
+  --font-display: "Jost", sans-serif;
+  --font-headline: "Jost", sans-serif;
+  --font-title: "Jost", sans-serif;
+  --font-body: "Radio Canada Big", sans-serif;
+  --font-label: "Radio Canada Big", sans-serif;
+  --font-mono: "Source Code Pro", monospace;
+
+  --text-display-lg: 52px;
+  --text-display-lg--line-height: 58px;
+  --text-display-lg--letter-spacing: -0.75px;
+  --text-display-lg--font-weight: 700;
+
+  --text-display-lg-mobile: 32px;
+  --text-display-lg-mobile--line-height: 38px;
+  --text-display-lg-mobile--letter-spacing: -0.25px;
+  --text-display-lg-mobile--font-weight: 700;
+
+  --text-headline-lg: 36px;
+  --text-headline-lg--line-height: 44px;
+  --text-headline-lg--letter-spacing: -0.5px;
+  --text-headline-lg--font-weight: 600;
+
+  --text-headline-lg-mobile: 26px;
+  --text-headline-lg-mobile--line-height: 32px;
+  --text-headline-lg-mobile--letter-spacing: -0.25px;
+  --text-headline-lg-mobile--font-weight: 600;
+
+  --text-headline-md: 26px;
+  --text-headline-md--line-height: 32px;
+  --text-headline-md--letter-spacing: -0.2px;
+  --text-headline-md--font-weight: 600;
+
+  --text-title-lg: 20px;
+  --text-title-lg--line-height: 28px;
+  --text-title-lg--letter-spacing: 0px;
+  --text-title-lg--font-weight: 600;
+
+  --text-title-md: 16px;
+  --text-title-md--line-height: 24px;
+  --text-title-md--letter-spacing: 0px;
+  --text-title-md--font-weight: 600;
+
+  --text-body-lg: 17px;
+  --text-body-lg--line-height: 26px;
+  --text-body-lg--letter-spacing: 0px;
+  --text-body-lg--font-weight: 400;
+
+  --text-body-md: 15px;
+  --text-body-md--line-height: 22px;
+  --text-body-md--letter-spacing: 0px;
+  --text-body-md--font-weight: 400;
+
+  --text-label-lg: 14px;
+  --text-label-lg--line-height: 20px;
+  --text-label-lg--letter-spacing: 0.1px;
+  --text-label-lg--font-weight: 600;
+
+  --text-label-sm: 12px;
+  --text-label-sm--line-height: 16px;
+  --text-label-sm--letter-spacing: 0.4px;
+  --text-label-sm--font-weight: 600;
+
+  --text-mono-md: 13px;
+  --text-mono-md--line-height: 18px;
+  --text-mono-md--letter-spacing: 0px;
+  --text-mono-md--font-weight: 500;
+
+  --spacing-gutter-xs: 4px;
+  --spacing-gutter-sm: 8px;
+  --spacing-gutter-md: 16px;
+  --spacing-gutter-lg: 24px;
+  --spacing-gutter-xl: 32px;
+  --spacing-section: 64px;
+  --spacing-page-margin: 24px;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+
+  --transition-duration-state-change: 120ms;
+  --transition-duration-surface-enter: 240ms;
+  --transition-duration-surface-exit: 160ms;
+  --ease-state-change: ease-out;
+  --ease-surface-enter: cubic-bezier(0.2, 0, 0, 1);
+  --ease-surface-exit: cubic-bezier(0.3, 0, 1, 1);
+}
+
+.material-symbols-outlined,
+.material-symbols-rounded,
+.material-symbols-sharp,
+.material-icons {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1 !important;
+  box-sizing: content-box;
+  overflow: hidden;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: middle;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
